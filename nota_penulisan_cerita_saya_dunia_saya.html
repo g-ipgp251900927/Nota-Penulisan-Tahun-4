@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nota Penulisan | Cerita Saya, Dunia Saya</title>
+<style>
+:root{--purple:#51439a;--navy:#20264f;--ink:#26304a;--muted:#4d5872;--gold:#ffe18a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{margin:0;background:linear-gradient(180deg,#fff9e9 0%,#f4f1ff 48%,#eef9ff 100%);color:var(--ink);font:16px/1.75 "Trebuchet MS",Arial,sans-serif}
+header{display:block;background:radial-gradient(circle at 12% 18%,#ffcf70 0 4%,transparent 4.5%),radial-gradient(circle at 88% 22%,#8fe1d0 0 4%,transparent 4.5%),linear-gradient(125deg,#202b62,#6250aa 58%,#885bbd);color:#fff;text-align:center;padding:48px 18px 44px;position:relative;border-radius:0 0 32px 32px}
+header div:first-child{font-weight:bold;letter-spacing:2px;color:#fff4c8}
+header h1{color:#ffe58c;font-size:clamp(2.15rem,5.5vw,3.5rem);margin:10px;text-shadow:3px 4px 0 #30245e}
+header h2{color:#fff!important;font-size:clamp(1.3rem,3vw,2rem);margin:4px}
+header p{color:#fff!important;max-width:700px;margin:10px auto}
+nav{position:sticky;top:0;background:#fffdf7;padding:11px;display:flex;justify-content:center;flex-wrap:wrap;gap:7px;box-shadow:0 4px 14px #3b34701c;z-index:5;border-bottom:3px solid #ffe08a}
+nav a{color:#443783!important;text-decoration:none;font-weight:bold;padding:7px 11px;border-radius:20px;background:#f1edff}
+nav a:hover{background:#e2d9ff}
+main{max-width:1000px;margin:25px auto;padding:0 15px}
+.section{display:block;background:#fff;border:2px solid #e7e0fb;border-radius:24px;padding:clamp(17px,3vw,27px);margin:21px 0;box-shadow:0 8px 22px #453b7510;color:var(--ink)}
+.section h2{display:inline-block;background:#eee9ff;color:#443783!important;padding:8px 15px;border-radius:15px 15px 15px 4px;font-size:clamp(1.2rem,3vw,1.55rem);margin:0 0 14px}
+h3{color:#443783!important;margin:7px 0}
+p,li,td,th,label{color:var(--ink)}
+b,strong{color:#28264f}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:14px}
+.card{background:#f0ebff;color:var(--ink);padding:17px;border-radius:19px;border:2px solid #ded5fa;box-shadow:0 4px 0 #e3dcf7}
+.card p{color:#303951}
+.gold{background:#fff5d8;border-color:#f3df9c}
+.mint{background:#e8f7ef;border-color:#ccebd8}
+.example{background:#fff8e7;color:#302b42;border-left:5px solid #eab943;padding:13px 16px;margin:13px 0;border-radius:10px}
+.example p{color:#302b42}
+li{margin:8px 0}
+table{width:100%;border-collapse:collapse;background:#fff}
+td,th{border:1px solid #ded9ed;padding:10px;text-align:left;color:#26304a}
+th{background:#eae5ff;color:#3e347d}
+input,textarea{width:100%;padding:11px;border:2px solid #d8d3e9;border-radius:10px;font:inherit;margin:5px 0 13px;background:#fff;color:#26304a}
+input::placeholder,textarea::placeholder{color:#69728a;opacity:1}
+textarea{min-height:78px}
+button{background:linear-gradient(120deg,#51439a,#8060c2);color:#fff;border:0;border-radius:24px;padding:12px 20px;font-weight:bold;font-size:1rem;cursor:pointer;box-shadow:0 4px 0 #372b79}
+button:active{transform:translateY(2px);box-shadow:0 2px 0 #372b79}
+footer{display:block;text-align:center;padding:30px 16px;color:#38415c;background:#fffdf7;margin-top:30px}
+@media(max-width:600px){nav{justify-content:flex-start}nav a{font-size:.84rem}.section{border-radius:18px}.grid{grid-template-columns:1fr}}
+
+[hidden]{display:none!important}
+.hero-subtitle{max-width:720px;margin:18px auto 0!important;color:#fff!important;font-size:1.05rem;line-height:1.7}
+.hero-tagline{display:inline-block;margin:30px auto 0;padding:13px 25px;background:#fff;border:3px solid #ffe18a;border-radius:28px;color:#443783;font-weight:900;letter-spacing:1px;box-shadow:0 6px 0 #382b78,0 10px 22px #15143c55}
+.home-page{display:block}
+.home-welcome{text-align:center;padding:12px 5px 25px}
+.welcome-icon{font-size:3rem;margin:5px 0 12px}
+.home-welcome h2{display:block!important;margin:0 auto 12px!important;background:transparent!important;color:#443783!important;font-size:clamp(1.5rem,4vw,2.1rem)!important}
+.home-welcome p{max-width:740px;margin:8px auto;color:#303951}
+.welcome-highlight{background:#fff5d8;border:1px solid #f3df9c;border-radius:15px;padding:12px 16px}
+.start-button{font-size:1.15rem;padding:14px 42px;margin:18px auto 5px;background:linear-gradient(120deg,#ef9f38,#e56f54);box-shadow:0 5px 0 #a94b36}
+.menu-heading{display:block!important;margin:22px 0 14px!important;color:#443783!important}
+.lesson-menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,205px),1fr));gap:13px}
+.lesson-tile{min-height:145px;background:#f0ebff;color:#302b59;border:2px solid #ded5fa;border-radius:19px;padding:17px 13px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;box-shadow:0 4px 0 #e3dcf7;white-space:normal}
+.lesson-tile span{font-size:2rem}
+.lesson-tile b{color:#302b59;font-size:1rem}
+.lesson-tile small{color:#4d5872;font-size:.86rem}
+.lesson-tile:hover{transform:translateY(-2px);filter:brightness(.98)}
+.tile-gold{background:#fff5d8;border-color:#f3df9c;box-shadow:0 4px 0 #f0e2b7}
+.tile-mint{background:#e8f7ef;border-color:#ccebd8;box-shadow:0 4px 0 #d2eadb}
+.lesson-page{margin-top:20px}
+.page-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:18px;padding-bottom:12px;border-bottom:1px dashed #d7d0ed}
+.home-button,.secondary-button{background:#eee9ff;color:#443783;box-shadow:none;border:1px solid #d8cff5;padding:9px 14px}
+.page-count{font-size:.78rem;font-weight:bold;letter-spacing:1px;color:#6250aa;background:#f2efff;padding:7px 11px;border-radius:20px}
+.page-controls{display:flex;justify-content:space-between;gap:12px;margin-top:25px;padding-top:17px;border-top:1px solid #eee8fa}
+.next-button{margin-left:auto}
+@media(max-width:600px){.hero-tagline{margin-top:25px;padding:11px 17px;font-size:.88rem}.page-top{align-items:flex-start;flex-direction:column}.page-controls button{padding:10px 13px}.lesson-tile{min-height:125px}}
+
+</style></head><body>
+<header><div>BAHASA MELAYU • TAHUN 4</div><h1>🌈 Nota Penulisan 🌈</h1><h2 style="color:white">Cerita Saya, Dunia Saya</h2><p class="hero-subtitle">Jom belajar membina idea, menyusun jalan cerita dan menghasilkan penulisan deskriptif serta imaginatif!</p><div class="hero-tagline">🌟 MARI MENJADI PENULIS CILIK! 🌟</div>
+</header>
+
+<main>
+<section class="section home-page" id="home">
+  <div class="home-welcome">
+    <div class="welcome-icon">📚✨</div>
+    <h2>Selamat Datang, Penulis Cilik!</h2>
+    <p>Selamat datang ke dunia penulisan! Di sini, kamu akan belajar cara memerhati, membina idea, menggambarkan suasana dan mencipta cerita sendiri.</p>
+    <p class="welcome-highlight">Pilih satu tajuk pembelajaran di bawah atau tekan butang MULA untuk memulakan pengembaraan kamu.</p>
+    <button class="start-button" type="button" onclick="showPage('mula')">🚀 MULA</button>
+  </div>
+  <h2 class="menu-heading">🗺️ Peta Pembelajaran Saya</h2>
+  <div class="lesson-menu">
+    <button class="lesson-tile" onclick="showPage('mula')"><span>🌟</span><b>1. Kenali Penulisan</b><small>Apa itu penulisan?</small></button>
+    <button class="lesson-tile tile-gold" onclick="showPage('jenis')"><span>📝</span><b>2. Dua Jenis Penulisan</b><small>Deskriptif & imaginatif</small></button>
+    <button class="lesson-tile tile-mint" onclick="showPage('struktur')"><span>📖</span><b>3. Struktur Cerita</b><small>Permulaan hingga penutup</small></button>
+    <button class="lesson-tile" onclick="showPage('idea')"><span>💡</span><b>4. Membina Idea</b><small>Jana idea cerita</small></button>
+    <button class="lesson-tile tile-gold" onclick="showPage('elemen')"><span>🧩</span><b>5. Empat Elemen</b><small>Watak, masa, tempat, peristiwa</small></button>
+    <button class="lesson-tile tile-mint" onclick="showPage('ayat')"><span>✍️</span><b>6. Membina Ayat</b><small>Penanda wacana & kosa kata</small></button>
+    <button class="lesson-tile" onclick="showPage('contoh')"><span>🌳</span><b>7. Contoh Penulisan</b><small>Baca dan perhatikan</small></button>
+    <button class="lesson-tile tile-gold" onclick="showPage('latihan')"><span>🎨</span><b>8. Bengkel Idea Saya</b><small>Rancang cerita sendiri</small></button>
+  </div>
+</section>
+
+<section class="section lesson-page" id="mula" hidden><div class="page-top"><button class="home-button" onclick="showPage(&quot;home&quot;)">⌂ Laman Utama</button><span class="page-count">PEMBELAJARAN 1 / 8</span></div><h2>🌟 1. Apa itu Penulisan Imaginatif?</h2><p>Penulisan imaginatif ialah penulisan yang menggunakan daya khayalan dan kreativiti untuk menghasilkan cerita. Kita boleh mencipta watak, tempat, peristiwa dan pengembaraan sendiri.</p><div class="grid">
+<div class="card"><h3>Watak – Siapa?</h3><p>Contohnya: seorang murid, seekor arnab atau robot kecil.</p></div>
+<div class="card gold"><h3>Latar – Di mana?</h3><p>Contohnya: hutan misteri, istana awan atau pulau ajaib.</p></div>
+<div class="card mint"><h3>Peristiwa – Apa berlaku?</h3><p>Contohnya: menemui pintu rahsia atau membantu haiwan yang sesat.</p></div></div><div class="page-controls"><button class="secondary-button" onclick="showPage(&quot;home&quot;)">⌂ Laman Utama</button><button class="next-button" onclick="showPage(&quot;jenis&quot;)">Seterusnya →</button></div></section>
+
+<section class="section lesson-page" id="jenis" hidden><div class="page-top"><button class="home-button" onclick="showPage(&quot;home&quot;)">⌂ Laman Utama</button><span class="page-count">PEMBELAJARAN 2 / 8</span></div><h2>📝 2. Kenali Dua Jenis Penulisan</h2>
+<p>Apabila menulis berdasarkan gambar, kamu boleh menggunakan <b>penulisan deskriptif</b> dan <b>penulisan imaginatif</b> dalam cerita yang sama.</p>
+<div class="grid">
+<div class="card"><h3>🌼 Penulisan Deskriptif</h3><p>Penulisan yang <b>menggambarkan sesuatu dengan jelas dan terperinci</b> supaya pembaca dapat membayangkan perkara yang diceritakan.</p><p><b>Fokus kepada:</b> rupa, warna, bentuk, bunyi, suasana, perasaan dan keadaan.</p><p><b>Kosa kata:</b> berwarna-warni, redup, nyaman, terang, merdu, harum, tinggi, luas.</p></div>
+<div class="card gold"><h3>✨ Penulisan Imaginatif</h3><p>Penulisan yang menggunakan <b>daya imaginasi dan kreativiti</b> untuk mencipta watak, peristiwa, pengalaman atau pengembaraan.</p><p><b>Fokus kepada:</b> watak, jalan cerita, kejadian, cabaran dan penyelesaian.</p><p><b>Kosa kata:</b> ajaib, misteri, mengembara, menemui, menjelajah, menyelamatkan, terkejut.</p></div>
+</div>
+<div class="example"><b>Bolehkah kedua-duanya digabungkan?</b> Ya! Dalam aktiviti menulis berdasarkan gambar, kamu boleh menggambarkan suasana dan keadaan secara deskriptif, kemudian mengembangkan cerita melalui imaginasi. Contohnya, gambarkan tempat, cuaca dan perasaan watak, kemudian ceritakan peristiwa yang berlaku.</div>
+<div class="page-controls"><button class="secondary-button" onclick="showPage(&quot;mula&quot;)">← Sebelum</button><button class="next-button" onclick="showPage(&quot;struktur&quot;)">Seterusnya →</button></div></section>
+
+<section class="section lesson-page" id="struktur" hidden><div class="page-top"><button class="home-button" onclick="showPage(&quot;home&quot;)">⌂ Laman Utama</button><span class="page-count">PEMBELAJARAN 3 / 8</span></div><h2>📖 3. Struktur Sebuah Cerita</h2><div class="grid">
+<div class="card"><h3>① Permulaan</h3><p>Perkenalkan watak dan tempat.</p><div class="example">Pada suatu petang, Aina berjalan-jalan di sebuah hutan yang sunyi.</div></div>
+<div class="card gold"><h3>② Perkembangan</h3><p>Ceritakan masalah atau kejadian menarik.</p><div class="example">Tiba-tiba, Aina ternampak sebuah pintu bercahaya di sebalik pokok besar.</div></div>
+<div class="card mint"><h3>③ Penutup</h3><p>Ceritakan penyelesaian dan pengakhiran.</p><div class="example">Akhirnya, Aina berjaya membantu arnab itu pulang ke rumahnya.</div></div></div><div class="page-controls"><button class="secondary-button" onclick="showPage(&quot;jenis&quot;)">← Sebelum</button><button class="next-button" onclick="showPage(&quot;idea&quot;)">Seterusnya →</button></div></section>
+<section class="section lesson-page" id="idea" hidden><div class="page-top"><button class="home-button" onclick="showPage(&quot;home&quot;)">⌂ Laman Utama</button><span class="page-count">PEMBELAJARAN 4 / 8</span></div><h2>💡 4. Cara Membina Idea Cerita</h2><ol><li><b>Siapa watak utama?</b> Namakan watak dan fikirkan sifatnya.</li><li><b>Di manakah cerita berlaku?</b> Pilih tempat yang sesuai dengan imaginasi kamu.</li><li><b>Apakah perkara yang berlaku?</b> Fikirkan kejadian atau masalah yang perlu dihadapi.</li><li><b>Bagaimanakah masalah diselesaikan?</b> Fikirkan tindakan watak.</li><li><b>Apakah pengakhiran cerita?</b> Akhiri cerita dengan pengajaran atau kejutan.</li></ol><div class="example"><b>Contoh 3 idea utama:</b> (1) Amir menemui peta ajaib. (2) Amir tersesat di taman rahsia. (3) Amir membantu seekor burung mencari sarangnya.</div><div class="page-controls"><button class="secondary-button" onclick="showPage(&quot;struktur&quot;)">← Sebelum</button><button class="next-button" onclick="showPage(&quot;elemen&quot;)">Seterusnya →</button></div></section>
+
+<section class="section lesson-page" id="elemen" hidden><div class="page-top"><button class="home-button" onclick="showPage(&quot;home&quot;)">⌂ Laman Utama</button><span class="page-count">PEMBELAJARAN 5 / 8</span></div><h2>🧩 5. Empat Elemen Penting dalam Cerita</h2>
+<p>Sebelum menulis, fikirkan empat perkara ini. Empat elemen ini membantu kamu membina cerita yang jelas dan tersusun.</p>
+<div class="grid">
+<div class="card"><h3>👧 WATAK – Siapa?</h3><p>Watak ialah orang, haiwan atau makhluk yang terlibat dalam cerita.</p><p><b>Fikirkan:</b> Siapakah watak utama? Apakah sifatnya? Siapakah watak sampingan?</p><p><b>Kosa kata:</b> berani, bijak, peramah, pemalu, penyayang, rajin, ingin tahu.</p></div>
+<div class="card gold"><h3>🕒 MASA – Bila?</h3><p>Masa menerangkan waktu sesuatu peristiwa berlaku.</p><p><b>Fikirkan:</b> Bilakah cerita bermula? Pada waktu pagi, petang atau malam?</p><p><b>Kosa kata:</b> pada suatu pagi, pada waktu senja, selepas sekolah, keesokan harinya, beberapa minit kemudian.</p></div>
+<div class="card mint"><h3>📍 TEMPAT – Di mana?</h3><p>Tempat ialah lokasi sesuatu cerita atau peristiwa berlaku.</p><p><b>Fikirkan:</b> Di manakah watak berada? Apakah suasana tempat itu?</p><p><b>Kosa kata:</b> sunyi, sibuk, nyaman, luas, sempit, bersih, gelap, terang.</p></div>
+<div class="card"><h3>⚡ PERISTIWA – Apa berlaku?</h3><p>Peristiwa ialah kejadian atau tindakan yang berlaku dalam cerita.</p><p><b>Fikirkan:</b> Apakah yang berlaku dahulu? Apakah masalah yang timbul? Bagaimanakah masalah diselesaikan?</p><p><b>Kosa kata:</b> menemui, menyedari, membantu, mencari, menyiasat, menyelesaikan, menyelamatkan.</p></div>
+</div>
+<div class="example"><b>Ingat!</b> Watak + Masa + Tempat + Peristiwa membantu kamu merancang cerita. Kamu boleh mencatat kata kunci dahulu sebelum membina ayat lengkap.</div>
+<div class="page-controls"><button class="secondary-button" onclick="showPage(&quot;idea&quot;)">← Sebelum</button><button class="next-button" onclick="showPage(&quot;ayat&quot;)">Seterusnya →</button></div></section>
+
+<section class="section lesson-page" id="ayat" hidden><div class="page-top"><button class="home-button" onclick="showPage(&quot;home&quot;)">⌂ Laman Utama</button><span class="page-count">PEMBELAJARAN 6 / 8</span></div><h2>✍️ 6. Membina Ayat yang Menarik</h2><p>Tambahkan maklumat tentang tempat, masa, perasaan dan tindakan supaya ayat lebih jelas dan menarik.</p><table><tr><th>Ayat biasa</th><th>Ayat yang dikembangkan</th></tr><tr><td>Ali masuk ke hutan.</td><td>Ali melangkah perlahan-lahan ke dalam hutan yang gelap dan dipenuhi pokok-pokok tinggi.</td></tr><tr><td>Arnab itu takut.</td><td>Arnab putih itu kelihatan ketakutan kerana terdengar bunyi yang kuat dari belakang semak.</td></tr></table>
+<h3>Penanda Wacana</h3><p>Gunakan penanda wacana untuk menghubungkan idea dan menjadikan cerita lebih lancar.</p><div class="grid">
+<div class="card"><b>Memulakan cerita</b><p>Pada suatu hari, Pada suatu pagi, Pada suatu petang, Pada suatu malam, Ketika itu, Sejak kecil lagi</p></div>
+<div class="card gold"><b>Menunjukkan urutan masa</b><p>Mula-mula, Pertama sekali, Selepas itu, Kemudian, Seterusnya, Tidak lama kemudian, Beberapa minit kemudian, Keesokan harinya</p></div>
+<div class="card mint"><b>Menambah idea</b><p>Selain itu, Di samping itu, Tambahan pula, Malah, Seterusnya</p></div>
+<div class="card"><b>Menunjukkan kejadian mengejut</b><p>Tiba-tiba, Tanpa disangka-sangka, Dengan tidak semena-mena, Pada saat itu</p></div>
+<div class="card gold"><b>Menunjukkan sebab dan akibat</b><p>Oleh sebab itu, Oleh kerana itu, Disebabkan oleh, Akibatnya, Lantaran itu</p></div>
+<div class="card mint"><b>Menunjukkan pertentangan</b><p>Namun begitu, Walau bagaimanapun, Sebaliknya, Akan tetapi</p></div>
+<div class="card"><b>Mengakhiri cerita</b><p>Akhirnya, Kesudahannya, Pada penghujung cerita, Sejak peristiwa itu, Sejak hari itu</p></div>
+<div class="card gold"><b>Menggambarkan suasana</b><p>Di sekelilingnya, Pada masa yang sama, Dari kejauhan, Tidak jauh dari situ</p></div>
+</div>
+<h3>Kosa kata menarik</h3><p><b>Tempat:</b> sunyi, bercahaya, misteri, luas, menghijau<br><b>Perasaan:</b> terkejut, gembira, bimbang, kagum, berani<br><b>Tindakan:</b> menyelinap, meneroka, melompat, menyelamatkan, menjelajah</p><div class="page-controls"><button class="secondary-button" onclick="showPage(&quot;elemen&quot;)">← Sebelum</button><button class="next-button" onclick="showPage(&quot;contoh&quot;)">Seterusnya →</button></div></section>
+<section class="section lesson-page" id="contoh" hidden><div class="page-top"><button class="home-button" onclick="showPage(&quot;home&quot;)">⌂ Laman Utama</button><span class="page-count">PEMBELAJARAN 7 / 8</span></div><h2>🌳 7. Contoh Cerita Pendek</h2><h3>Mesin Masa di Bilik Sains</h3>
+<p>Pada suatu hari, Faris membantu gurunya mengemas bilik sains selepas tamat waktu persekolahan. Ketika menyusun beberapa kotak, dia ternampak sebuah mesin kecil yang belum pernah dilihatnya.</p>
+<p>Faris menekan satu butang pada mesin itu. Tiba-tiba, lampu berkelip dan satu suara kedengaran dari dalam mesin. Faris berasa terkejut tetapi tetap tenang. Dia membaca arahan pada skrin lalu menekan butang berhenti.</p>
+<p>Beberapa saat kemudian, mesin itu kembali senyap. Faris segera memanggil gurunya untuk menunjukkan alat tersebut. Gurunya memuji tindakan Faris yang berhati-hati. Faris berasa gembira kerana berjaya menyelesaikan kejadian itu dengan bijak.</p>
+<div class="example"><b>Kenal pasti empat elemen:</b> Watak – Faris dan guru; Masa – selepas waktu persekolahan; Tempat – bilik sains; Peristiwa – Faris menemui mesin kecil dan meminta bantuan guru selepas mesin itu diaktifkan.</div><div class="page-controls"><button class="secondary-button" onclick="showPage(&quot;ayat&quot;)">← Sebelum</button><button class="next-button" onclick="showPage(&quot;latihan&quot;)">Seterusnya →</button></div></section>
+
+<section class="section lesson-page" id="latihan" hidden><div class="page-top"><button class="home-button" onclick="showPage(&quot;home&quot;)">⌂ Laman Utama</button><span class="page-count">PEMBELAJARAN 8 / 8</span></div><h2>📝 8. Bengkel Idea Saya</h2><p>Rancang cerita kamu di bawah sebelum menghasilkan draf. Gunakan gambar rangsangan yang diberikan oleh guru untuk mendapatkan idea cerita.</p>
+<div class="card gold"><b>💡 Tip Penulis Cilik:</b> Lihat gambar dengan teliti. Perhatikan perkara kecil, fikirkan apa yang mungkin berlaku, kemudian catat kata kunci. Tidak perlu terus menulis ayat panjang.</div><div class="example"><b>Ingat empat elemen:</b> WATAK (siapa?) • MASA (bila?) • TEMPAT (di mana?) • PERISTIWA (apa berlaku?).</div><label>Watak – Siapakah watak utama dan watak sampingan?</label><input id="watak" placeholder="Tulis nama dan sifat watak">
+<label>Masa – Bilakah cerita berlaku?</label><input id="masa" placeholder="Contoh: Pada suatu petang">
+<label>Tempat – Di manakah cerita berlaku?</label><input id="latar" placeholder="Tulis lokasi dan suasananya">
+<label>Peristiwa – Apakah kejadian utama?</label><textarea id="peristiwa" placeholder="Tulis kata kunci tentang kejadian atau masalah utama"></textarea>
+<label>Permulaan – Apakah yang berlaku?</label><textarea id="awal" placeholder="Pada suatu hari, ..."></textarea>
+<label>Perkembangan – Apakah masalah atau kejadian?</label><textarea id="tengah" placeholder="Tiba-tiba, ..."></textarea>
+<label>Penutup – Bagaimanakah cerita berakhir?</label><textarea id="akhir" placeholder="Akhirnya, ..."></textarea>
+<button type="button" onclick="rangka()">✨ Lihat rangka cerita saya</button><div id="hasil" class="example" hidden></div><div class="page-controls"><button class="secondary-button" onclick="showPage(&quot;contoh&quot;)">← Sebelum</button><button class="next-button" onclick="showPage(&quot;home&quot;)">Selesai ✓</button></div></section>
+</main><footer><b>Cerita Saya, Dunia Saya</b><br>Kamu ada imaginasi yang hebat! Teruskan berkarya dan mencipta cerita sendiri! ✨</footer>
+<script>
+
+function showPage(id){
+  document.querySelectorAll('.home-page, .lesson-page').forEach(page => {
+    page.hidden = page.id !== id;
+  });
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function rangka(){let data=[["Watak","watak"],["Masa","masa"],["Tempat","latar"],["Peristiwa utama","peristiwa"],["Permulaan","awal"],["Perkembangan","tengah"],["Penutup","akhir"]];let s=data.map(x=>"<p><b>"+x[0]+":</b> "+(document.getElementById(x[1]).value.trim()||"Belum diisi")+"</p>").join("");let e=document.getElementById("hasil");e.innerHTML="<b>Rangka cerita saya</b>"+s;e.hidden=false;}
+</script></body></html>
